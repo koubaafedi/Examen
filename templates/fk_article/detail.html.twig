@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <div class="alert alert-primary" role="alert">
+        Id d'article : {{ article.id }}
+    </div>
+    <div class="alert alert-primary" role="alert">
+        Nom d'article : {{ article.nom }}
+    </div>
+    <div class="alert alert-primary" role="alert">
+        Prix d'article : {{ article.prix }}
+    </div>
+    <div class="alert alert-primary" role="alert">
+        Prix en TTC d'article : {{ ttc(article.prix)}}
+    </div>
+{% endblock %}
+
+
+
